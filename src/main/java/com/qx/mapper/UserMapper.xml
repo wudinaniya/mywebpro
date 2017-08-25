@@ -3,7 +3,7 @@
 <mapper namespace="com.qx.mapper.UserMapper">
 	
 	<select id="findAll" resultType="com.qx.pojo.User">
-		select * from user;
+		select * from user
 	</select>
 	
 </mapper>
