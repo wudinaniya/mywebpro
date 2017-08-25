@@ -8,8 +8,7 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
 	<!-- 虽在applicationContext.xml中配置过了,最好还是在此处再配一次,防止找不到 -->
-	<context:component-scan base-package="com.qx"></context:component-scan>
-	
+	<context:component-scan base-package="com.qx.controller"></context:component-scan>
 	<!-- 不需要配置id,因为用不到 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- <property name="prefix" value="/"></property> -->

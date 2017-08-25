@@ -21,9 +21,14 @@ public class UserController {
 	public ModelAndView findAllUser(){
 		ModelAndView mv=new ModelAndView();
 		
-		List<UserMutate> userMutates = userService.findAll();
-		mv.addObject("usermutates", userMutates);
-		mv.setViewName("/userlist");
+		try {
+			List<UserMutate> userMutates = userService.findAll();
+			mv.addObject("usermutates", userMutates);
+			mv.setViewName("/userlist");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return mv;
 		
 	}

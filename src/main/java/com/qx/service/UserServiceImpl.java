@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService{
 	private VerifierMapper verifierMapper;
 	
 	@Override
-	public List<UserMutate> findAll() {
+	public List<UserMutate> findAll() throws Exception{
 		//从数据库中查询出所有用户
 		List<User> users = userMapper.findAll();
 		//设置转换器
